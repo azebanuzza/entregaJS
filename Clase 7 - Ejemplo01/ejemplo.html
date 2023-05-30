@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Aos</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Va antes de nuestra hoja de estilos -->
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <div class="bloque" data-aos="fade-down">Rectángulo 1</div>
+    <div class="bloque" data-aos="fade-left">Rectángulo 2</div>
+    <div class="bloque" data-aos="flip-left">Rectángulo 3</div>
+    <div
+      class="bloque"
+      data-aos="flip-right"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
+      Rectángulo 4
+    </div>
+    <div
+      class="bloque"
+      data-aos="flip-down"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+    >
+      Rectángulo 5
+    </div>
+    <div class="bloque" data-aos="flip-up">Rectángulo 6</div>
+    <div
+      class="bloque"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+    >
+      Rectángulo 7
+    </div>
+    <div class="bloque" data-aos="fade-down">Rectángulo 8</div>
+    <div class="bloque" data-aos="fade-up">Rectángulo 9</div>
+    <div class="bloque" data-aos="fade-left">Rectángulo 10</div>
+    <div class="bloque" data-aos="fade-right">Rectángulo 11</div>
+    <div class="bloque" data-aos="zoom-in">Rectángulo 12</div>
+    <div
+      class="bloque"
+      data-aos="zoom-out"
+      data-aos-easing="linear"
+      data-aos-duration="3000"
+    >
+      Rectángulo 13
+    </div>
+    <div
+      class="bloque"
+      data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+    >
+      Rectángulo 14
+    </div>
+    <div
+      class="bloque"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="100"
+    >
+      Rectángulo 15
+    </div>
+
+    <!-- Precisamos que primero cargue los rectángulos antes de cargar los efectos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
